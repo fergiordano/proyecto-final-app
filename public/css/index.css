@@ -1,0 +1,14 @@
+.carousel {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#nosotros {
+    font: 1em sans-serif;
+}
