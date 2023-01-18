@@ -51,7 +51,7 @@ app.get('/formulario', (req, res) => {
 
 app.get('/productos', (req, res) => {
     
-     let sql = "SELECT * FROM productos";
+    /* let sql = "SELECT * FROM productos";
     conexion.query(sql, function(err, result){
         if (err) throw err;
         console.log(result);
@@ -59,9 +59,9 @@ app.get('/productos', (req, res) => {
             titulo: 'Productos',
             datos: result
         })
-    }) 
+    }) */
 
-    /*res.render('sinDatos')*/
+    res.render('sinDatos')
 })
 
 app.get('/contacto', (req, res) =>{
@@ -83,7 +83,7 @@ app.post('/login', (req, res) =>{
     }
 })
 
-app.post('/formulario', (req, res) =>{    
+app.post('/formulario', (req, res) =>{ /*   
     const nombre = req.body.nombre;
     const precio = req.body.precio;
     const codigo = req.body.codigo;
@@ -92,16 +92,17 @@ app.post('/formulario', (req, res) =>{
         nombre: nombre,
         precio: precio,
         codigo: codigo
-    }
+    } 
+
 
     let sql = "INSERT INTO productos set ?";
     conexion.query(sql, datos, function(err){
         if (err) throw err;
             console.log(`1 Registro insertado`);
             res.render('enviado')
-        })  
+        })  */
 
-    /*res.render('sinDatos')*/
+    res.render('sinDatos')
 })
 
 app.post('/contacto', (req, res) =>{
@@ -136,7 +137,7 @@ app.post('/contacto', (req, res) =>{
     let datos = {
         nombre: nombre,
         email: email
-    }
+    }/*
 
     let sql = "INSERT INTO contactos set ?";
     conexion.query(sql, datos, function(err){
@@ -145,17 +146,17 @@ app.post('/contacto', (req, res) =>{
             //Email
             envioMail().catch(console.error);
             res.render('enviado')
-        }) 
+        }) */
 
-        /*res.json({
+        res.json({
             prueba: 'Probando deploy sin conexion a la Database'
-        })*/
+        })
 
 })
 
 app.post('/delete', (req, res) => {
 
-    console.log(req.body.idProducto);
+    /*console.log(req.body.idProducto);
 
     let sql = "DELETE FROM productos where idProducto = " + req.body.idProducto + "";
     console.log(sql);
@@ -163,15 +164,15 @@ app.post('/delete', (req, res) => {
         if (err) throw err;
             console.log('Dato eliminado: ' + result.affectedRows);
             res.render('formulario')
-    })  
+    }) */
 
-    /*res.json({
-        prueba: 'Probando deploy sin conexion a la Database'
-    })*/
+    res.json({
+        prueba: 'Deploy sin conexion a la Database'
+    })
 })
 
 
-app.post('/update', (req, res) => {
+app.post('/update', (req, res) => {/*
 
     const nombre = req.body.nombre;
     const precio = req.body.precio;
@@ -192,11 +193,11 @@ app.post('/update', (req, res) => {
         if (err) throw err;
             console.log('Dato Actualizado: ' + result.affectedRows);
             res.render('formulario')
-    })  
+    }) */
 
-    /*res.json({
-        prueba: 'Probando deploy sin conexion a la Database'
-    })*/
+    res.json({
+        prueba: 'Deploy sin conexion a la Database'
+    })
 
 })
 
