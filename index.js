@@ -61,7 +61,7 @@ app.get('/productos', (req, res) => {
         })
     }) */
 
-    res.render('sinDatos')
+    res.render('sin datos')
 })
 
 app.get('/contacto', (req, res) =>{

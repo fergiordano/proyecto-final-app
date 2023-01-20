@@ -7,8 +7,29 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-left: 300px;
+    
 }
 
 #nosotros {
-    font: 1em sans-serif;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.lead{
+    margin-right: 30px;
+}
+
+.mapa{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#sobrenosotros{
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(12, 12, 66);
+    color: white;
 }
