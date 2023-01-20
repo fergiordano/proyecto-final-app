@@ -1,6 +1,10 @@
-.carousel {
-    margin-right: 25px;
-    margin-left: 25px;
+body{
+    background-image: url(https://fondosmil.com/fondo/46538.jpg) ;
+    
+}
+
+.hr{
+    color: white;
 }
 
 .ubicacion{

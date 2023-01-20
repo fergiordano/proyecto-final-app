@@ -51,7 +51,7 @@ app.get('/formulario', (req, res) => {
 
 app.get('/productos', (req, res) => {
     
-    /* let sql = "SELECT * FROM productos";
+     let sql = "SELECT * FROM productos";
     conexion.query(sql, function(err, result){
         if (err) throw err;
         console.log(result);
@@ -59,9 +59,9 @@ app.get('/productos', (req, res) => {
             titulo: 'Productos',
             datos: result
         })
-    }) */
+    }) 
 
-    res.render('sin datos')
+    //res.render('sin datos')
 })
 
 app.get('/contacto', (req, res) =>{
